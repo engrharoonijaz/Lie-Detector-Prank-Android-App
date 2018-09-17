@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.liedetector.MainActivity"
+    tools:ignore="MergeRootFrame" >
+  
+     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg" >  
+        
+    </ImageView>    
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="240dp"
+            android:layout_height="280dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="158dp" >
+
+            <ImageView
+                android:id="@+id/imageView_finger"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/thumb_scanner_normal" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/red_line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scanning_bar"
+                android:visibility="invisible" >
+            </ImageView>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/scan_text"
+            android:layout_width="250dp"
+            android:visibility="invisible"
+            android:layout_height="150dp"
+            android:layout_below="@+id/light_off"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/light_off"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/light_off" />
+
+    </RelativeLayout>
+
+    </FrameLayout>
+
